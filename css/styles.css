@@ -1,9 +1,16 @@
 :root {
   --blekit:rgba(33, 150, 243, 1);
   --superjasnoszary: rgba(245, 244, 250, 1);
+  --uperjasnoszary: rgba(236, 236, 236, 1);
   --jasnoszary: rgba(117, 117, 117, 1);
   --ciemnoszary:  rgba(33, 33, 33, 1);
 }
+
+*
+{
+  box-sizing: border-box;
+}
+
 body 
 {
     font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
@@ -11,7 +18,7 @@ body
     line-height: 117%;
     letter-spacing: 0.06em;
 }
-h1, h2, h3, h4, h5, h6, p, ul
+h1, h2, h3, h4, h5, h6, p, ul, li
 {
   margin: 0;
   padding: 0;
@@ -23,10 +30,10 @@ h1, h2, h3, h4, h5, h6, p, ul
 }
 .container
 {
-  width: 1200px;
+  width: 1600px;
   margin:0%;
-  padding-left: 215px;
-  padding-right: 215px;
+  padding-left: 115px;
+  padding-right: 115px;
   /*padding-top: 24px;*/
 }
 
@@ -37,12 +44,53 @@ h1, h2, h3, h4, h5, h6, p, ul
   padding-bottom: 94px;
 }
 
+header
+{
+  border-bottom: 1px solid var(--uperjasnoszary);
+}
+
 .link
 {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
+}
+.poziom
+{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+.poziom ul 
+{
+  margin-left: 93px;
 }
 
+.poziom li
+{
+  margin-right: 46px;
+}
+
+.poziom .kontakt:first-of-type
+{
+  margin-right: 50px;
+}
+
+.poziom > .kontakt
+{
+  margin-left: 301px;
+  margin-top: 0px;
+}
+
+ul
+{
+  list-style: none;
+}
+
+ul.poziom
+{
+  margin-top: 10px;
+  padding-bottom: 28px;
+}
 .logo
 {
   font-family: 'Raleway', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
@@ -86,6 +134,12 @@ h1, h2, h3, h4, h5, h6, p, ul
   margin-top: 9px;
   margin-bottom: 9px;
 }
+
+.liststop > .listel:nth-child(1)
+{
+  margin-top: 20px;
+}
+
 .liststop > .listel:nth-child(3)
 {
   margin-bottom: 0px;
@@ -95,6 +149,7 @@ h1, h2, h3, h4, h5, h6, p, ul
 {
   text-align: center;
   font-size: 16px;
+  margin-bottom: 40px;
 }
 
 h2.naguwek
@@ -102,11 +157,12 @@ h2.naguwek
   font-size: 36px;
 }
 
-.ciemnasek > .naguwek
+h1.naguwek
 {
   font-size: 44px;
   font-weight: 900;
   line-height: 136%;
+  width: 696px;
 }
 
 .przycisk
@@ -119,6 +175,9 @@ h2.naguwek
   line-height: 162.5%;
   border-width: 0;
   cursor:pointer;
+  width: 121px;
+  padding: 5px;
+  border-radius: 5%;
 }
 
 .przycisk:hover, .przycisk:focus
@@ -137,6 +196,8 @@ h2.naguwek
   font-weight: 700;
   line-height: 187.5%;
   text-align: center;
+  width: 200px;
+  padding: 17px;
 }
 
 .wazne
@@ -165,4 +226,30 @@ h2.naguwek
   color: rgba(255, 255, 255, 0.6);
 }
 
+.centrum
+{
+  display: flex;
+  justify-content: center;
+}
 
+.siatka
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.siatka figcaption
+{
+  border-bottom: 1px solid var(--uperjasnoszary);
+  border-left: 1px solid var(--uperjasnoszary);
+  border-right: 1px solid var(--uperjasnoszary);
+  padding: 10px;
+}
+
+.przyciski
+{
+  padding-left: 295px;
+  padding-right: 295px;
+}
