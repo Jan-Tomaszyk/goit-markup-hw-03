@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li
 }
 .container
 {
-  width: 1600px;
+  width: 1200px;
   margin:0%;
   padding-left: 115px;
   padding-right: 115px;
@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li
 
 .section
 {
+  width: 1600px ;
   margin:0;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -68,6 +69,16 @@ header
 .poziom li
 {
   margin-right: 46px;
+}
+
+.poziom > li:first-child
+{
+  margin-left: 0;
+}
+
+.poziom > li:last-child
+{
+  margin-right: 0;
 }
 
 .poziom .kontakt:first-of-type
@@ -135,12 +146,12 @@ ul.poziom
   margin-bottom: 9px;
 }
 
-.liststop > .listel:nth-child(1)
+.liststop > .listel:first-child
 {
   margin-top: 20px;
 }
 
-.liststop > .listel:nth-child(3)
+.liststop > .listel:last-child
 {
   margin-bottom: 0px;
 }
@@ -236,9 +247,24 @@ h1.naguwek
 {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom:66px;
 }
 
+.siatkaitem:nth-child(3n+1)
+{
+  margin-left: 0;
+}
 
+figure
+{
+  margin:0;
+}
+
+.siatkaitem:nth-child(3n)
+{
+  margin-right: 0;
+}
 
 .siatka figcaption
 {
